@@ -10,3 +10,5 @@ columns:
         status: listed
         layout: cards
         size: large
+        image:
+          cover: true
