@@ -40,11 +40,6 @@ columns:
             image:
               cover: true
               ratio: 3/2
-          credit:
-            label: Crédit
-            type: text
-            width: 2/3
-
 
 
   upright:
@@ -67,6 +62,15 @@ columns:
               - italic
               - link
             size: medium
+          credit:
+            label: Crédit
+            type: writer
+            nodes: false
+            marks:
+              - bold
+              - italic
+              - link
+            width: 1/1
 
   center:
     width: 1/1
