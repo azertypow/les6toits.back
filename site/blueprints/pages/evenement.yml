@@ -1,0 +1,128 @@
+title: Evenement
+
+options:
+  changeSlug: false
+  changeStatus: true
+  changeTemplate: false
+  changeTitle: true
+  delete: true
+  duplicate: true
+  preview: false
+  read: true
+  update: true
+
+status:
+  listed:
+    label: Publié
+    text: La page est publique pour tout le monde
+  draft:
+    label: Brouillon
+    text: Cette page est un brouillon et n’est visible que pour les éditeurs connectés.
+  unlisted:
+    label: Archives
+    text: La page fait parti des archives mais reste consultable via son URL directe.
+
+columns:
+  upleft:
+    width: 1/3
+    sections:
+      event:
+        type: fields
+        fields:
+          imageCoverURL:
+            label: Image
+            type: files
+            layout: cards
+            multiple: false
+            size: small
+            width: 2/3
+            info: "{{ file.dimensions }}"
+            image:
+              cover: true
+              ratio: 3/2
+          credit:
+            label: Crédit
+            type: text
+            width: 2/3
+
+
+
+  upright:
+    width: 2/3
+    sections:
+      event2:
+        type: fields
+        fields:
+          subtitle:
+            label: Sous-titre
+            type: text
+            width: 1/1
+          textcontent:
+            label: Texte
+            type: textarea
+            width: 1/1
+            buttons: false
+            size: medium
+
+  center:
+    width: 1/1
+    sections:
+      event3:
+        type: fields
+        fields:
+          dates:
+            label: Représentations
+            type: structure
+            sortBy: date asc
+            min: 1
+            fields:
+              date:
+                label: Date
+                type: date
+                display: DD.MM.YYYY
+                width: 1/2
+              heures:
+                label: Heures
+                type: structure
+                min: 1
+                sortBy: heure asc
+                width: 1/2
+                fields:
+                  heure:
+                    label: Heure
+                    type: time
+          location:
+            label: Lieu
+            type: checkboxes
+            width: 1/2
+            options:
+              sallepeterminten: Salle Peter Minten
+              forum: Forum
+              agora: Agora
+              athanor: Athanor
+              hermitage: L'hermitage
+              chalet: Le chalet
+          tags:
+            label: Tags
+            type: tags
+            width: 1/2
+            help: "Contrechamps, Conservatoire, Orchestre, Eklekto"
+            separator: ","
+            accept: options
+            options:
+              - value: contrechamps
+                text: Contrechamps
+              - value: conservatoire
+                text: Conservatoire
+              - value: orchestre
+                text: Orchestre
+              - value: eklekto
+                text: Eklekto
+
+
+
+
+
+
+
+

@@ -1,0 +1,28 @@
+title: Presentation
+
+options:
+  changeSlug: false
+  changeStatus: false
+  changeTemplate: false
+  changeTitle: false
+  delete: false
+  duplicate: false
+  preview: false
+  read: true
+  update: true
+
+icon: text
+
+sections:
+  presentation:
+    type: fields
+    fields:
+      text:
+        label: Présentation des 6toits
+        type: writer
+        autofocus: true
+        marks:
+          - bold
+          - italic
+        nodes: false
+        required: true

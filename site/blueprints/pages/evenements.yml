@@ -1,0 +1,54 @@
+title: Evenements
+
+options:
+  changeSlug: false
+  changeStatus: false
+  changeTemplate: false
+  changeTitle: false
+  delete: false
+  duplicate: false
+  preview: false
+  read: true
+  update: true
+
+icon: layers
+
+sections:
+  published:
+    headline: Publié
+    type: pages
+    status: listed
+    layout: cards
+    template: evenement
+    info: "{{ page.getfirstdate.toDate('d.m.Y') }}"
+    sortBy: getfirstdate asc
+    image:
+      query: page.cover
+      cover: true
+      ratio: 3/2
+
+  draft:
+    headline: Brouillon
+    type: pages
+    status: draft
+    template: evenement
+    create: evenement
+    layout: cards
+    info: "{{ page.getfirstdate }}"
+    image:
+      query: page.cover
+      cover: true
+      ratio: 3/2
+
+  unlisted:
+    headline: Archivé
+    type: pages
+    status: unlisted
+    flip: false
+    template: evenement
+    layout: cards
+    info: "{{ page.getfirstdate }}"
+    image:
+      query: page.cover
+      cover: true
+      ratio: 3/2
