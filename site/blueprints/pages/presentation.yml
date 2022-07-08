@@ -24,5 +24,6 @@ sections:
         marks:
           - bold
           - italic
+          - link
         nodes: false
         required: true
