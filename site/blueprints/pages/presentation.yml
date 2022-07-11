@@ -25,5 +25,7 @@ sections:
           - bold
           - italic
           - link
-        nodes: false
+        nodes:
+          - h1
+          - paragraph
         required: true

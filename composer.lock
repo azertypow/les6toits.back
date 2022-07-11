@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8c333d90ff2063a26c3e5b0a4c68761e",
+    "content-hash": "87a80a98db56fae79b10411ca2efd569",
     "packages": [
         {
             "name": "claviska/simpleimage",
@@ -54,6 +54,53 @@
                 }
             ],
             "time": "2021-12-01T12:42:55+00:00"
+        },
+        {
+            "name": "coralic/kirby-extended-writer",
+            "version": "1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/coralic/kirby-extended-writer.git",
+                "reference": "37ce5af01fdad1166ff374140461b2bc3f1d4671"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/coralic/kirby-extended-writer/zipball/37ce5af01fdad1166ff374140461b2bc3f1d4671",
+                "reference": "37ce5af01fdad1166ff374140461b2bc3f1d4671",
+                "shasum": ""
+            },
+            "require": {
+                "getkirby/composer-installer": "^1.2",
+                "php": ">=7.4.0"
+            },
+            "require-dev": {
+                "getkirby/cms": "^3.6"
+            },
+            "type": "kirby-plugin",
+            "extra": {
+                "kirby-cms-path": false
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tobias Möritz",
+                    "email": "tobias@moeritz.io",
+                    "homepage": "https://moeritz.io"
+                }
+            ],
+            "description": "Supercharge Kirby's Writer field with new nodes, marks and features",
+            "homepage": "https://github.com/coralic/kirby-extended-writer#readme",
+            "keywords": [
+                "kirby"
+            ],
+            "support": {
+                "issues": "https://github.com/coralic/kirby-extended-writer/issues",
+                "source": "https://github.com/coralic/kirby-extended-writer/tree/1.1.1"
+            },
+            "time": "2022-02-10T01:44:56+00:00"
         },
         {
             "name": "filp/whoops",
@@ -836,7 +883,8 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": ">=7.4.0 <8.2.0"
+        "php": ">=7.4.0 <8.2.0",
+        "ext-json": "*"
     },
     "platform-dev": [],
     "plugin-api-version": "2.1.0"
