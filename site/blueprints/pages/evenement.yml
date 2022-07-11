@@ -32,6 +32,9 @@ columns:
           imageCoverURL:
             label: Image
             type: files
+            query: page.images
+            uploads:
+              template: image
             layout: cards
             multiple: false
             size: small
