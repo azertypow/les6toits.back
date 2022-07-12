@@ -2,3 +2,7 @@
   text-align: center;
   font-size: var(--text-base);
 }
+
+.k-writer.k-writer-field-input a {
+  color: inherit;
+}
