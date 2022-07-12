@@ -87,6 +87,7 @@ columns:
             type: structure
             sortBy: date asc
             min: 1
+            required: true
             fields:
               date:
                 label: Date
