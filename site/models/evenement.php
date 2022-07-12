@@ -23,8 +23,9 @@ class EvenementPage extends Page
 
     public function getfirstdate()
     {
-        $lastructure = $this->content()->get('dates')->toStructure();
-        $first = $lastructure->first();
+        /** @var Kirby\Cms\Structure $datesStructure */
+        $datesStructure = $this->content()->get('dates')->toStructure();
+        $first = $datesStructure->first();
         return $first->date();
     }
 }
