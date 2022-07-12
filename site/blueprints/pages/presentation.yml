@@ -26,6 +26,6 @@ sections:
           - italic
           - link
         nodes:
-          - h1
+          - h2
           - paragraph
         required: true
