@@ -26,9 +26,11 @@ class EvenementPage extends Page
         /** @var Kirby\Cms\Structure $datesStructure */
         $datesStructure = $this->content()->get('dates')->toStructure();
 
-        if( $datesStructure->count() < 0 ) return null;
-
-        $first = $datesStructure->first();
-        return $first->date();
+        try {
+            $first = $datesStructure->first();
+            return $first->date();
+        } catch(Error $e) {
+            return null;
+        }
     }
 }
