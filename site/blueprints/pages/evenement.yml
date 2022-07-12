@@ -32,6 +32,7 @@ columns:
           imageCoverURL:
             label: Image
             type: files
+            required: true
             query: page.images
             uploads:
               template: image
