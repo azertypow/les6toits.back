@@ -29,3 +29,17 @@ sections:
           - h2
           - paragraph
         required: true
+      infopratiques:
+        label: Infos pratiques
+        type: writer
+        autofocus: false
+        marks:
+          - bold
+          - italic
+          - link
+        nodes:
+          - h2
+          - paragraph
+        required: false
+        size: medium
+

@@ -44,6 +44,10 @@ columns:
             image:
               cover: true
               ratio: 3/2
+          linkCoverURL:
+            label: Lien externe
+            type: url
+            required: false
 
 
   upright:

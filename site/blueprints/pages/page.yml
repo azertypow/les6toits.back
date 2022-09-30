@@ -1,0 +1,56 @@
+title: Page
+
+options:
+  changeSlug: false
+  changeStatus: true
+  changeTemplate: false
+  changeTitle: true
+  delete: true
+  duplicate: true
+  preview: false
+  read: true
+  update: true
+
+status:
+  listed:
+    label: Publié
+    text: La page est publique pour tout le monde
+  draft:
+    label: Brouillon
+    text: Cette page est un brouillon et n’est visible que pour les éditeurs connectés.
+  unlisted:
+    label: Archives
+    text: La page fait parti des archives mais reste consultable via son URL directe.
+
+sections:
+  content:
+    type: fields
+    fields:
+      contentstructure:
+        label: Structure de contenu
+        type: structure
+        columns:
+          image:
+            width: 1/4
+          text:
+            width: 3/4
+        fields:
+          image:
+            label: Image
+            type: files
+            width: 1/3
+          text:
+            label: Texte
+            type: writer
+            autofocus: false
+            marks:
+              - bold
+              - italic
+              - link
+            nodes:
+              - h2
+              - paragraph
+            required: false
+            size: medium
+            width: 2/3
+
