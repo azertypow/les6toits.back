@@ -23,7 +23,7 @@
   },
   "require": {
     "php": ">=7.4.0 <8.2.0",
-    "getkirby/cms": "^3.6",
+    "getkirby/cms": "^3.8",
     "ext-json": "*",
     "coralic/kirby-extended-writer": "^1.1"
   },
