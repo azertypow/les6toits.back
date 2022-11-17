@@ -11,6 +11,7 @@ echo json_encode( $page->children()->map(function ($value) {
   return $value->contentstructure()->toStructure()->map( function ($structureValue) {
 
     return [
+      'title' => $structureValue->title()->value(),
       'text' => $structureValue->text()->value(),
       'image' => $structureValue->image()->toFile() ? imageApiResponse( $structureValue->image()->toFile() ) : null,
     ];
