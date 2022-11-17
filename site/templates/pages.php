@@ -8,12 +8,18 @@ require_once ('./global/imageResponce.php');
 
 echo json_encode( $page->children()->map(function ($value) {
 
-  return $value->contentstructure()->toStructure()->map( function ($structureValue) {
+  $pageData = [
+    'title' => $value->title()->value()
+  ];
 
-    return [
-      'title' => $structureValue->title()->value(),
-      'text' => $structureValue->text()->value(),
-      'image' => $structureValue->image()->toFile() ? imageApiResponse( $structureValue->image()->toFile() ) : null,
-    ];
-  }) -> data();
-})->data() );
+  return array_merge(
+    $pageData,
+    ['content' => $value->contentstructure()->toStructure()->map( function ($structureValue) {
+
+      return [
+        'text' => $structureValue->text()->value(),
+        'image' => $structureValue->image()->toFile() ? imageApiResponse( $structureValue->image()->toFile() ) : null,
+      ];
+    }) -> data()]
+  );
+})->data());
