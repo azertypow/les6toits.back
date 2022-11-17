@@ -8,4 +8,5 @@ require_once ('./global/imageResponce.php');
 
 echo json_encode([
   'introContent' => $page->text()->value(),
+  'infopratiques' => $page->infopratiques()->value(),
 ]);
