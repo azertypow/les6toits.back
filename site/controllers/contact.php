@@ -38,10 +38,10 @@ return function($kirby, $pages, $page) {
                 $message    = esc($data['message']);
 
                 $kirby->email([
-                    'from'     => 'contact+siteweb@les6toits.ch',
+                    'from'     => 'contact@les6toits.ch',
                     'to'       => [
                         'azertypow@gmail.com',
-                        'nico@villa1203.ch',
+                        'contact+siteweb@les6toits.ch',
                     ],
                     'body'     =>
                         "Nouvelle prise de contacte de $name:"
