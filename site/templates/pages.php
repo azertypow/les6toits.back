@@ -19,6 +19,7 @@ echo json_encode( $page->children()->map(function ($value) {
       return [
         'text' => $structureValue->text()->value(),
         'image' => $structureValue->image()->toFile() ? imageApiResponse( $structureValue->image()->toFile() ) : null,
+        'allFiles' => $structureValue->image()->toFile(),
       ];
     }) -> data()]
   );
