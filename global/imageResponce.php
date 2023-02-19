@@ -7,6 +7,7 @@ use Kirby\Cms\{File, Page};
 function imageApiResponse(File $image): array {
     try {
         return [
+            "alt"           => $image->alt()->value(),
             "originalUrl"   => $image->url(),
             "largeUrl"      => $image->resize(2400)->url(),
             "mediumUrl"     => $image->resize(1280)->url(),
