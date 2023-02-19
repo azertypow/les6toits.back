@@ -30,8 +30,7 @@ sections:
         label: Structure de contenu
         type: structure
         columns:
-          image:
-            width: 1/4
+          image: false
           text:
             width: 3/4
         fields:
