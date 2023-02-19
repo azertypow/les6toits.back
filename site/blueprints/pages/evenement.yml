@@ -123,7 +123,7 @@ columns:
             label: Tags
             type: tags
             width: 1/2
-            help: "Contrechamps, Conservatoire, Orchestre, Eklekto"
+            help: "Contrechamps, Conservatoire, Orchestre, Eklekto, invités"
             separator: ","
             accept: options
             options:
@@ -135,6 +135,8 @@ columns:
                 text: Orchestre
               - value: eklekto
                 text: Eklekto
+              - value: invités
+                text: Invités
 
 
 
