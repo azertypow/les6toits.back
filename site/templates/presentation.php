@@ -9,4 +9,7 @@ require_once ('./global/imageResponce.php');
 echo json_encode([
   'introContent' => $page->text()->value(),
   'infopratiques' => $page->infopratiques()->value(),
+  'logos' => $page->logos()->toFiles()->map(function ($file) {
+       return imageApiResponse( $file );
+    }) -> data(),
 ]);
