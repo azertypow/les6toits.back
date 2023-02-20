@@ -46,7 +46,7 @@ sections:
         label: Logos
         type: files
         required: false
-        query: pages.logos
+        query: page.images.template("image")
         uploads:
           template: image
         layout: cards
