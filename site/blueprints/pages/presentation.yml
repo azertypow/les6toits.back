@@ -42,4 +42,18 @@ sections:
           - paragraph
         required: false
         size: medium
+      logos:
+        label: Logos
+        type: files
+        required: false
+        query: presentation.images
+        uploads:
+          template: image
+        layout: cards
+        multiple: true
+        size: tiny
+        info: "{{ file.dimensions }}"
+        image:
+          cover: false
+          ratio: 5/2
 
