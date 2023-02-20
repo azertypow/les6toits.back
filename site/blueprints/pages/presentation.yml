@@ -46,7 +46,7 @@ sections:
         label: Logos
         type: files
         required: false
-        query: presentation.logos
+        query: pages.logos
         uploads:
           template: image
         layout: cards
