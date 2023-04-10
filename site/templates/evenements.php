@@ -17,7 +17,7 @@ echo json_encode([
     'imageCoverURL' => imageApiResponse( $listedPage->imageCoverURL()->toFile() ),
     'title'         => $listedPage -> title()->value(),
     'subtitle'      => $listedPage -> subtitle() -> value(),
-
+    'linkCoverURL'  => $listedPage -> linkCoverURL() -> value(),
     'textContent'   => $listedPage -> textContent()->value(),
     'credit'        => $listedPage -> credit()->value(),
     'location'      => $listedPage -> location()->value(),
