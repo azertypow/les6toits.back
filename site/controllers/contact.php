@@ -40,7 +40,7 @@ return function($kirby, $pages, $page) {
                 $kirby->email([
                     'from'     => 'contact@les6toits.ch',
                     'to'       => [
-                        'azertypow@gmail.com',
+                        'azertypow@icloud.com',
                         'contact+siteweb@les6toits.ch',
                     ],
                     'body'     =>
