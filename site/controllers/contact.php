@@ -9,6 +9,7 @@ return function($kirby, $pages, $page) {
             'firstname' => get('firstname'),
             'name'      => get('name'),
             'email'     => get('email'),
+            'phone'     => get('phone'),
             'message'   => get('message'),
         ];
 
@@ -35,6 +36,7 @@ return function($kirby, $pages, $page) {
             try {
                 $firstname  = esc($data['firstname']);
                 $name       = esc($data['name']);
+                $phone      = esc($data['phone']);
                 $message    = esc($data['message']);
 
                 $kirby->email([
@@ -47,6 +49,7 @@ return function($kirby, $pages, $page) {
                         "Nouvelle prise de contacte de $name:"
                         ."\n\nNOM\n$name"
                         ."\n\nPRÉNOM\n$firstname"
+                        ."\n\nTÉLÉPHONE\n$phone"
                         ."\n\nMESSAGE\n$message"
                     ,
                     'replyTo'  => $data['email'],
