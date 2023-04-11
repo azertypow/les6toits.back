@@ -43,7 +43,7 @@ return function($kirby, $pages, $page) {
                     'from'     => 'contact@les6toits.ch',
                     'to'       => [
                         'azertypow@icloud.com',
-//                        'contact+siteweb@les6toits.ch',
+                        'contact+siteweb@les6toits.ch',
                     ],
                     'body'     =>
                         "Nouvelle prise de contacte de $name:"
